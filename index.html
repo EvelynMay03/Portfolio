@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>May Myint Myat — Aspiring Software Developer & AI Engineer</title>
+    <meta
+      name="description"
+      content="Portfolio of May Myint Myat, a computing graduate from Strategy First College. Academic projects in web development, databases, and Android, with links to GitHub."
+    />
+    <meta name="author" content="May Myint Myat" />
+    <meta name="theme-color" content="#F5F5F3" />
+    <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Outfit:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Apply theme before first paint to avoid a flash of the wrong colors. -->
+    <script>
+      (function () {
+        document.documentElement.classList.add("js");
+        var stored = null;
+        try {
+          stored = localStorage.getItem("theme");
+        } catch (error) {}
+        var theme =
+          stored === "light" || stored === "dark"
+            ? stored
+            : window.matchMedia("(prefers-color-scheme: dark)").matches
+              ? "dark"
+              : "light";
+        document.documentElement.setAttribute("data-theme", theme);
+        var themeColor = document.querySelector('meta[name="theme-color"]');
+        if (themeColor) {
+          themeColor.setAttribute("content", theme === "dark" ? "#111318" : "#F5F5F3");
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <div class="page-shell">
+      <header class="site-header" id="site-header">
+        <a class="logo" href="#home">May Myint Myat.</a>
+
+        <nav id="primary-nav" class="primary-nav" aria-label="Primary">
+          <ul class="nav-list">
+            <li><a class="nav-link" href="#home">Home</a></li>
+            <li><a class="nav-link" href="#about">About</a></li>
+            <li><a class="nav-link" href="#projects">Projects</a></li>
+            <li><a class="nav-link" href="#skills">Skills</a></li>
+            <li><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="header-tools">
+          <button
+            class="theme-toggle"
+            id="theme-toggle"
+            type="button"
+            aria-label="Switch to dark mode"
+            title="Toggle color theme"
+          >
+            <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M21 14.5A8.5 8.5 0 0 1 9.5 3 7 7 0 1 0 21 14.5z"></path>
+            </svg>
+            <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="12" r="4"></circle>
+              <path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path>
+            </svg>
+          </button>
+
+          <button
+            class="nav-toggle"
+            id="nav-toggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="primary-nav"
+            aria-label="Open menu"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </header>
+
+      <main id="main">
+        <section class="hero" id="home" aria-labelledby="hero-heading">
+          <div class="hero-copy">
+            <p class="hero-eyebrow">Portfolio · Computing Graduate</p>
+            <h1 id="hero-heading">Hi, I’m <em>May Myint Myat.</em></h1>
+            <p class="hero-role">
+              Aspiring <span>Software Developer</span> &amp; <span>AI Engineer</span> | Computing Graduate
+            </p>
+            <p class="hero-lead">
+              I’m a computing graduate passionate about software development, web technologies, and building practical
+              applications. I enjoy learning new technologies, solving problems, and turning ideas into functional
+              digital experiences.
+            </p>
+            <p class="hero-lead">
+              I’m currently looking for opportunities to gain professional experience, strengthen my technical skills,
+              and grow as a developer.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-solid" href="#projects">View My Projects</a>
+              <a
+                class="btn btn-line"
+                href="https://github.com/EvelynMay03"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                GitHub
+              </a>
+              <a class="btn btn-line" href="#contact">Contact Me</a>
+            </div>
+          </div>
+
+          <!-- Replace assets/images/profile.jpg with another portrait if you want a different photo. -->
+          <div class="portrait-wrap">
+            <img
+              src="assets/images/profile.jpg"
+              alt="Portrait of May Myint Myat."
+              width="1086"
+              height="1448"
+            />
+          </div>
+        </section>
+
+        <section class="section" id="about" aria-labelledby="about-heading">
+          <div class="about-grid">
+            <div class="about-copy reveal">
+              <p class="section-kicker">About</p>
+              <h2 id="about-heading">About Me</h2>
+              <p class="about-lead">
+                I’m May Myint Myat, a computing graduate who completed the NCC Level 5 Diploma in Computing at Strategy
+                First College.
+              </p>
+              <p>
+                During my studies, I developed individual academic projects involving web development, databases,
+                backend programming, and Android application development.
+              </p>
+              <p>
+                These projects helped me gain hands-on experience with technologies such as HTML, CSS, JavaScript, PHP,
+                MySQL, C#, and Kotlin.
+              </p>
+              <p>
+                I enjoy solving technical problems, improving my programming skills, and learning how real-world
+                software applications are developed.
+              </p>
+              <p>
+                My goal is to begin my professional career in software development and continue growing through
+                practical experience and collaboration with experienced developers.
+              </p>
+            </div>
+
+            <dl class="about-facts reveal">
+              <div class="fact">
+                <dt>Name</dt>
+                <dd>May Myint Myat</dd>
+              </div>
+              <div class="fact">
+                <dt>Qualification</dt>
+                <dd>NCC Level 5 Diploma in Computing</dd>
+              </div>
+              <div class="fact">
+                <dt>Institution</dt>
+                <dd>Strategy First College, Mandalay</dd>
+              </div>
+              <div class="fact">
+                <dt>Academic Result</dt>
+                <dd>Distinction grades across all modules</dd>
+              </div>
+              <div class="fact">
+                <dt>Career Interest</dt>
+                <dd>Software Development &amp; AI Engineering</dd>
+              </div>
+            </dl>
+          </div>
+        </section>
+
+        <section class="section" id="projects" aria-labelledby="projects-heading">
+          <div class="section-heading reveal">
+            <div>
+              <p class="section-kicker">Work</p>
+              <h2 id="projects-heading">Selected Projects</h2>
+            </div>
+            <p>Five academic projects from my computing studies.</p>
+          </div>
+
+          <div class="projects-grid">
+            <article class="project-card reveal">
+              <div
+                class="project-media carousel"
+                data-carousel
+                tabindex="0"
+                aria-roledescription="carousel"
+                aria-label="Gemora screenshots"
+              >
+                <div class="carousel-viewport">
+                  <div class="carousel-track">
+                    <div class="carousel-slide"><img src="assets/images/projects/gemora/homepage.jpg" alt="Gemora homepage." width="1400" height="834" /></div>
+                    <div class="carousel-slide"><img src="assets/images/projects/gemora/shop.jpg" alt="Gemora shop page." width="1400" height="700" loading="lazy" /></div>
+                    <div class="carousel-slide"><img src="assets/images/projects/gemora/details.jpg" alt="Gemora product details page." width="1400" height="879" loading="lazy" /></div>
+                    <div class="carousel-slide"><img src="assets/images/projects/gemora/cart.jpg" alt="Gemora shopping cart." width="1400" height="642" loading="lazy" /></div>
+                    <div class="carousel-slide"><img src="assets/images/projects/gemora/checkout.jpg" alt="Gemora checkout page." width="1400" height="678" loading="lazy" /></div>
+                    <div class="carousel-slide"><img src="assets/images/projects/gemora/dashboard.jpg" alt="Gemora admin dashboard." width="1400" height="700" loading="lazy" /></div>
+                    <div class="carousel-slide"><img src="assets/images/projects/gemora/inventory.jpg" alt="Gemora inventory page." width="1400" height="723" loading="lazy" /></div>
+                    <div class="carousel-slide"><img src="assets/images/projects/gemora/orders.jpg" alt="Gemora orders page." width="1400" height="711" loading="lazy" /></div>
+                    <div class="carousel-slide"><img src="assets/images/projects/gemora/reports.jpg" alt="Gemora reports page." width="1400" height="771" loading="lazy" /></div>
+                  </div>
+                  <button class="carousel-arrow carousel-prev" type="button" aria-label="Previous screenshot"><span class="chevron chevron-left" aria-hidden="true"></span></button>
+                  <button class="carousel-arrow carousel-next" type="button" aria-label="Next screenshot"><span class="chevron chevron-right" aria-hidden="true"></span></button>
+                </div>
+                <div class="carousel-nav">
+                  <div class="carousel-dots" role="tablist" aria-label="Gemora screenshots"></div>
+                  <p class="carousel-count">1 / 9</p>
+                </div>
+              </div>
+              <div class="project-copy">
+                <div class="project-title-row">
+                  <h3>Gemora E-commerce System</h3>
+                  <span class="project-index">01</span>
+                </div>
+                <p>
+                  A full-stack e-commerce web application featuring product browsing, shopping carts, wishlists,
+                  checkout functionality, user accounts, and an admin management system.
+                </p>
+                <ul class="tag-list" aria-label="Technologies used">
+                  <li>PHP</li>
+                  <li>MySQL</li>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                  <li>Bootstrap</li>
+                </ul>
+                <a
+                  class="btn btn-line"
+                  href="https://github.com/EvelynMay03/gemora-ecommerce"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  View on GitHub
+                </a>
+              </div>
+            </article>
+
+            <article class="project-card reveal">
+              <div
+                class="project-media carousel carousel--page"
+                data-carousel
+                tabindex="0"
+                aria-roledescription="carousel"
+                aria-label="FoodFusion screenshots"
+              >
+                <div class="carousel-viewport">
+                  <div class="carousel-track">
+                    <div class="carousel-slide"><img src="assets/images/projects/foodfusion/homepage.jpg" alt="FoodFusion homepage." width="674" height="1400" /></div>
+                    <div class="carousel-slide"><img src="assets/images/projects/foodfusion/recipes.jpg" alt="FoodFusion recipes page." width="700" height="1400" loading="lazy" /></div>
+                    <div class="carousel-slide"><img src="assets/images/projects/foodfusion/details.jpg" alt="FoodFusion recipe details page." width="602" height="1400" loading="lazy" /></div>
+                    <div class="carousel-slide"><img src="assets/images/projects/foodfusion/search.jpg" alt="FoodFusion search page." width="1400" height="755" loading="lazy" /></div>
+                    <div class="carousel-slide"><img src="assets/images/projects/foodfusion/cookbook.jpg" alt="FoodFusion cookbook page." width="976" height="1400" loading="lazy" /></div>
+                    <div class="carousel-slide"><img src="assets/images/projects/foodfusion/culinary-resources.jpg" alt="FoodFusion culinary resources page." width="816" height="1400" loading="lazy" /></div>
+                    <div class="carousel-slide"><img src="assets/images/projects/foodfusion/educational-resources.jpg" alt="FoodFusion educational resources page." width="1346" height="1400" loading="lazy" /></div>
+                    <div class="carousel-slide"><img src="assets/images/projects/foodfusion/aboutus.jpg" alt="FoodFusion about page." width="768" height="1400" loading="lazy" /></div>
+                    <div class="carousel-slide"><img src="assets/images/projects/foodfusion/contactus.jpg" alt="FoodFusion contact page." width="773" height="1400" loading="lazy" /></div>
+                  </div>
+                  <button class="carousel-arrow carousel-prev" type="button" aria-label="Previous screenshot"><span class="chevron chevron-left" aria-hidden="true"></span></button>
+                  <button class="carousel-arrow carousel-next" type="button" aria-label="Next screenshot"><span class="chevron chevron-right" aria-hidden="true"></span></button>
+                </div>
+                <div class="carousel-nav">
+                  <div class="carousel-dots" role="tablist" aria-label="FoodFusion screenshots"></div>
+                  <p class="carousel-count">1 / 9</p>
+                </div>
+              </div>
+              <div class="project-copy">
+                <div class="project-title-row">
+                  <h3>FoodFusion</h3>
+                  <span class="project-index">02</span>
+                </div>
+                <p>
+                  A recipe-sharing web application where users can explore food-related content and interact with
+                  recipe features. Developed using PHP and MySQL for backend functionality and database integration.
+                </p>
+                <ul class="tag-list" aria-label="Technologies used">
+                  <li>PHP</li>
+                  <li>MySQL</li>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                  <li>Bootstrap</li>
+                </ul>
+                <a
+                  class="btn btn-line"
+                  href="https://github.com/EvelynMay03/foodfusion"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  View on GitHub
+                </a>
+              </div>
+            </article>
+
+            <article class="project-card reveal">
+              <div
+                class="project-media carousel"
+                data-carousel
+                tabindex="0"
+                aria-roledescription="carousel"
+                aria-label="Bean Boutique screenshots"
+              >
+                <div class="carousel-viewport">
+                  <div class="carousel-track">
+                    <div class="carousel-slide"><img src="assets/images/projects/bean-boutique/homepage.jpg" alt="Bean Boutique homepage." width="1400" height="828" /></div>
+                    <div class="carousel-slide"><img src="assets/images/projects/bean-boutique/coffee-selection.jpg" alt="Bean Boutique coffee selection page." width="1400" height="807" loading="lazy" /></div>
+                    <div class="carousel-slide"><img src="assets/images/projects/bean-boutique/brewing-equipment.jpg" alt="Bean Boutique brewing equipment page." width="1400" height="809" loading="lazy" /></div>
+                    <div class="carousel-slide"><img src="assets/images/projects/bean-boutique/services.jpg" alt="Bean Boutique services page." width="1400" height="801" loading="lazy" /></div>
+                  </div>
+                  <button class="carousel-arrow carousel-prev" type="button" aria-label="Previous screenshot"><span class="chevron chevron-left" aria-hidden="true"></span></button>
+                  <button class="carousel-arrow carousel-next" type="button" aria-label="Next screenshot"><span class="chevron chevron-right" aria-hidden="true"></span></button>
+                </div>
+                <div class="carousel-nav">
+                  <div class="carousel-dots" role="tablist" aria-label="Bean Boutique screenshots"></div>
+                  <p class="carousel-count">1 / 4</p>
+                </div>
+              </div>
+              <div class="project-copy">
+                <div class="project-title-row">
+                  <h3>Bean Boutique</h3>
+                  <span class="project-index">03</span>
+                </div>
+                <p>
+                  A responsive coffee shop website featuring coffee products, brewing equipment, and an interactive
+                  shopping interface.
+                </p>
+                <ul class="tag-list" aria-label="Technologies used">
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                </ul>
+                <a
+                  class="btn btn-line"
+                  href="https://github.com/EvelynMay03/bean-boutique"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  View on GitHub
+                </a>
+              </div>
+            </article>
+
+            <article class="project-card reveal">
+              <div
+                class="project-media carousel carousel--tracker"
+                data-carousel
+                tabindex="0"
+                aria-roledescription="carousel"
+                aria-label="Fitness Tracker screenshots"
+              >
+                <div class="carousel-viewport">
+                  <div class="carousel-track">
+                    <div class="carousel-slide"><img src="assets/images/projects/fitness-tracker/activities.jpg" alt="Fitness Tracker activities page." width="1400" height="1254" /></div>
+                    <div class="carousel-slide"><img src="assets/images/projects/fitness-tracker/progess.jpg" alt="Fitness Tracker progress page." width="1400" height="1245" loading="lazy" /></div>
+                    <div class="carousel-slide"><img src="assets/images/projects/fitness-tracker/goal.jpg" alt="Fitness Tracker goals page." width="1400" height="1242" loading="lazy" /></div>
+                  </div>
+                  <button class="carousel-arrow carousel-prev" type="button" aria-label="Previous screenshot"><span class="chevron chevron-left" aria-hidden="true"></span></button>
+                  <button class="carousel-arrow carousel-next" type="button" aria-label="Next screenshot"><span class="chevron chevron-right" aria-hidden="true"></span></button>
+                </div>
+                <div class="carousel-nav">
+                  <div class="carousel-dots" role="tablist" aria-label="Fitness Tracker screenshots"></div>
+                  <p class="carousel-count">1 / 3</p>
+                </div>
+              </div>
+              <div class="project-copy">
+                <div class="project-title-row">
+                  <h3>Fitness Tracker Website</h3>
+                  <span class="project-index">04</span>
+                </div>
+                <p>
+                  An ASP.NET web application that allows users to track physical activities, set fitness goals,
+                  calculate calories, and monitor their fitness progress.
+                </p>
+                <ul class="tag-list" aria-label="Technologies used">
+                  <li>C#</li>
+                  <li>ASP.NET Web Forms</li>
+                  <li>SQL Server</li>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                </ul>
+                <a
+                  class="btn btn-line"
+                  href="https://github.com/EvelynMay03/fitness-tracker"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  View on GitHub
+                </a>
+              </div>
+            </article>
+
+            <article class="project-card reveal">
+              <div
+                class="project-media carousel carousel--app"
+                data-carousel
+                tabindex="0"
+                aria-roledescription="carousel"
+                aria-label="Fitness+ screenshots"
+              >
+                <div class="carousel-viewport">
+                  <div class="carousel-track">
+                    <div class="carousel-slide"><img src="assets/images/projects/fitness-plus/cover.jpg" alt="Fitness+ cover screen." width="677" height="1400" /></div>
+                    <div class="carousel-slide"><img src="assets/images/projects/fitness-plus/main.jpg" alt="Fitness+ main screen." width="661" height="1400" loading="lazy" /></div>
+                    <div class="carousel-slide"><img src="assets/images/projects/fitness-plus/activities.jpg" alt="Fitness+ activities screen." width="648" height="1400" loading="lazy" /></div>
+                    <div class="carousel-slide"><img src="assets/images/projects/fitness-plus/goal.jpg" alt="Fitness+ goal screen." width="643" height="1400" loading="lazy" /></div>
+                    <div class="carousel-slide"><img src="assets/images/projects/fitness-plus/youtube.jpg" alt="Fitness+ training video screen." width="659" height="1400" loading="lazy" /></div>
+                  </div>
+                  <button class="carousel-arrow carousel-prev" type="button" aria-label="Previous screenshot"><span class="chevron chevron-left" aria-hidden="true"></span></button>
+                  <button class="carousel-arrow carousel-next" type="button" aria-label="Next screenshot"><span class="chevron chevron-right" aria-hidden="true"></span></button>
+                </div>
+                <div class="carousel-nav">
+                  <div class="carousel-dots" role="tablist" aria-label="Fitness+ screenshots"></div>
+                  <p class="carousel-count">1 / 5</p>
+                </div>
+              </div>
+              <div class="project-copy">
+                <div class="project-title-row">
+                  <h3>Fitness+ Android Application</h3>
+                  <span class="project-index">05</span>
+                </div>
+                <p>
+                  An Android fitness tracking application that helps users record activities, set fitness goals, and
+                  monitor their progress. The application connects to a PHP backend and MySQL database.
+                </p>
+                <ul class="tag-list" aria-label="Technologies used">
+                  <li>Kotlin</li>
+                  <li>XML</li>
+                  <li>PHP</li>
+                  <li>MySQL</li>
+                  <li>Android Studio</li>
+                </ul>
+                <a
+                  class="btn btn-line"
+                  href="https://github.com/EvelynMay03/fitness-plus-android"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  View on GitHub
+                </a>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="section" id="skills" aria-labelledby="skills-heading">
+          <div class="reveal">
+            <p class="section-kicker">Toolkit</p>
+            <h2 id="skills-heading">Skills</h2>
+            <p class="section-note">Technologies I have used in academic projects.</p>
+          </div>
+
+          <div class="skill-groups reveal">
+            <div class="skill-row">
+              <h3>Frontend Development</h3>
+              <ul>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+                <li>Bootstrap</li>
+                <li>Responsive Web Design</li>
+              </ul>
+            </div>
+            <div class="skill-row">
+              <h3>Backend Development</h3>
+              <ul>
+                <li>PHP</li>
+                <li>C#</li>
+                <li>ASP.NET Web Forms</li>
+              </ul>
+            </div>
+            <div class="skill-row">
+              <h3>Mobile Development</h3>
+              <ul>
+                <li>Kotlin</li>
+                <li>Android XML</li>
+              </ul>
+            </div>
+            <div class="skill-row">
+              <h3>Databases</h3>
+              <ul>
+                <li>MySQL</li>
+                <li>SQL Server</li>
+              </ul>
+            </div>
+            <div class="skill-row">
+              <h3>Tools</h3>
+              <ul>
+                <li>Git</li>
+                <li>GitHub</li>
+                <li>Visual Studio</li>
+                <li>Android Studio</li>
+                <li>VS Code</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="education" aria-labelledby="education-heading">
+          <div class="reveal">
+            <p class="section-kicker">Background</p>
+            <h2 id="education-heading">Education</h2>
+          </div>
+          <article class="timeline reveal">
+            <h3>NCC Level 5 Diploma in Computing</h3>
+            <p class="education-place">Strategy First College, Mandalay</p>
+            <p class="education-badge">Distinction across all modules</p>
+            <p>
+              My studies covered software development, programming, databases, and computing fundamentals through
+              individual academic projects.
+            </p>
+          </article>
+        </section>
+
+        <section class="section" id="contact" aria-labelledby="contact-heading">
+          <div class="contact-panel reveal">
+            <p class="section-kicker">Contact</p>
+            <h2 id="contact-heading">Let’s Connect</h2>
+            <p class="contact-lead">
+              I’m open to internship and entry-level opportunities where I can contribute, learn, and grow as a
+              software developer. Feel free to reach out!
+            </p>
+            <p class="contact-mail">
+              <a href="mailto:maymyintmyat03@gmail.com">maymyintmyat03@gmail.com</a>
+            </p>
+            <div class="contact-actions">
+              <a class="btn btn-solid" href="mailto:maymyintmyat03@gmail.com">Email</a>
+              <a
+                class="btn btn-line"
+                href="https://github.com/EvelynMay03"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                GitHub
+              </a>
+              <a
+                class="btn btn-line"
+                href="https://www.linkedin.com/in/may-myint-myat-ba4422446"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                LinkedIn
+              </a>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <p>© 2026 May Myint Myat</p>
+        <p class="footer-links">
+          <a href="mailto:maymyintmyat03@gmail.com">Email</a>
+          <a href="https://github.com/EvelynMay03" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a
+            href="https://www.linkedin.com/in/may-myint-myat-ba4422446"
+            target="_blank"
+            rel="noopener noreferrer"
+            >LinkedIn</a
+          >
+        </p>
+      </footer>
+    </div>
+
+    <dialog class="lightbox" id="lightbox" aria-label="Screenshot preview">
+      <div class="lightbox-toolbar">
+        <p class="lightbox-caption" id="lightbox-caption">Screenshot preview</p>
+        <button class="lightbox-close" id="lightbox-close" type="button" aria-label="Close preview">
+          <span aria-hidden="true">×</span>
+        </button>
+      </div>
+      <div class="lightbox-stage">
+        <img id="lightbox-image" alt="" />
+      </div>
+      <div class="lightbox-controls">
+        <button class="lightbox-nav" id="lightbox-prev" type="button" aria-label="Previous screenshot">
+          <span class="chevron chevron-left" aria-hidden="true"></span>
+        </button>
+        <button class="lightbox-nav" id="lightbox-next" type="button" aria-label="Next screenshot">
+          <span class="chevron chevron-right" aria-hidden="true"></span>
+        </button>
+      </div>
+    </dialog>
+
+    <noscript>
+      <style>
+        .reveal {
+          opacity: 1 !important;
+          transform: none !important;
+        }
+      </style>
+    </noscript>
+    <script src="js/script.js"></script>
+  </body>
+</html>
